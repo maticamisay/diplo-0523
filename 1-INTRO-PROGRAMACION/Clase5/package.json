@@ -1,0 +1,11 @@
+{
+  "name": "app-tareas",
+  "version": "1.0.0",
+  "description": "aplicacion de tareas básica para la diplomatura fullstack, en la clase 5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "maticamisay",
+  "license": "ISC"
+}
