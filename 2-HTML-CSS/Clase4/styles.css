@@ -1,0 +1,39 @@
+section {
+  background-color: red;
+  height: 80vh;
+}
+
+div {
+  background-color: blue;
+  height: 50vh;
+}
+
+h1 {
+  background-color: rgb(4, 71, 4);
+  color: white;
+}
+
+.titulo {
+  font-size: 4rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.titulo.subtitulo {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 6rem;
+    color: rgb(236, 236, 95);
+  }
+
+  .subtitulo {
+    font-size: 6rem;
+  }
+}

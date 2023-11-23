@@ -1,0 +1,44 @@
+nav {
+  background-color: #ffbcbc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.navbar-links {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+  }
+
+  .navbar-links {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}

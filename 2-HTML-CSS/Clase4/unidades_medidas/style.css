@@ -1,0 +1,22 @@
+/* html {
+  font-size: 50px;
+} */
+
+body {
+  height: 80vh;
+  background-color: rgb(205, 255, 196);
+}
+
+section {
+  height: 50%;
+  background-color: red;
+  font-size: 50px;
+}
+
+p {
+  color: white;
+  font-size: 1em;
+  width: 1500px;
+  background-color: aqua;
+  height: 3rem;
+}
