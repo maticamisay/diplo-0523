@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-element">
+        <label for="username">Nombre de usuario</label>
+        <input id="username" placeholder="Ej maticamisay" />
+      </div>
+      <div class="form-element">
+        <label for="notas">Quieres agregar algo mas?</label>
+        <textarea id="notas" rows="5" placeholder="Ej hola chicos">
+holaaaaaaaaaa</textarea
+        >
+      </div>
+      <div class="form-element">
+        <label for="email">Ingresa tu email</label>
+        <input type="email" />
+      </div>
+      <div class="form-element">
+        <label for="password">Ingresa tu password</label>
+        <input type="password" />
+      </div>
+      <div class="form-element">
+        <label for="isOlder">Es mayor de edad</label>
+        <input type="checkbox" id="isOlder" />
+      </div>
+      <div class="form-element">
+        <label for="dni">Subir foto del frente de tu dni</label>
+        <input type="file" id="dni" />
+      </div>
+      <div class="form-element">
+        <label for="rubro">Tipo de negocio</label>
+        <select
+          name="rubro"
+          id="rubro"
+          placeholder="Ej. Ropa, calzado, accesorios"
+        >
+          <option value="default">Selecciona una opcion</option>
+          <option value="ropa">Ropa</option>
+          <option value="calzado">Calzado</option>
+          <option value="accesorios">Accesorios</option>
+        </select>
+      </div>
+      <button type="button">Cargar datos desde mercadolibre</button>
+      <button type="reset">Resetear</button>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
