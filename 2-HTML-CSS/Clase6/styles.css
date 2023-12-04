@@ -1,0 +1,11 @@
+:root {
+  --color-primary: #f9ed69;
+  --color-secondary: #f08a5d;
+  --color-tertiary: #b83b5e;
+  --color-quaternary: #6a2c70;
+  --color-quinary: #1e1f26;
+}
+
+button {
+  color: var(--color-primary);
+}

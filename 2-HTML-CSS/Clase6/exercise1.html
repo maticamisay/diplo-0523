@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Responsivo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="formulario-container">
+      <form class="formulario">
+        <input type="text" placeholder="Nombre" name="nombre" required />
+        <input type="email" placeholder="Email" name="email" required />
+        <input
+          type="password"
+          placeholder="Contraseña"
+          name="password"
+          required
+        />
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+
+  .formulario-container {
+    width: 50%;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input,
+  button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .formulario-container {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+</style>

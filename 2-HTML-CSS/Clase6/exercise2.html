@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjetas de Perfil Flexbox</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tarjetas-container">
+      <div class="tarjeta">
+        <img
+          src="https://thumbs.dreamstime.com/b/person-gray-photo-placeholder-man-shirt-white-background-person-gray-photo-placeholder-man-132818487.jpg"
+          alt="Perfil 1"
+        />
+        <h3>Nombre 1</h3>
+        <p>Breve descripción...</p>
+        <div class="botones">
+          <button>Seguir</button>
+          <button>Mensaje</button>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <img
+          src="https://media.istockphoto.com/id/871752462/vector/default-gray-placeholder-man.jpg?s=612x612&w=0&k=20&c=4aUt99MQYO4dyo-rPImH2kszYe1EcuROC6f2iMQmn8o="
+          alt="Perfil 1"
+        />
+        <h3>Nombre 2</h3>
+        <p>Breve descripción 2...</p>
+        <div class="botones">
+          <button>Seguir</button>
+          <button>Mensaje</button>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <img
+          src="https://cdn.stockmediaserver.com/smsimg35/pv/IsignstockContributors/ISS_18592_01562.jpg?token=YW3SajrnWyRzGm7vIsBerV-4jvvylEZXzVzb6Q4qqmk&class=pv&smss=53&expires=4102358400"
+          alt="Perfil 1"
+        />
+        <h3>Nombre 3</h3>
+        <p>Breve descripción 3...</p>
+        <div class="botones">
+          <button>Seguir</button>
+          <button>Mensaje</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  .tarjetas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .tarjeta {
+    background: linear-gradient(to bottom, #ffffff, #e9e9e9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+  }
+
+  .tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .tarjeta h3,
+  .tarjeta p {
+    margin: 10px;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  button:focus {
+    box-shadow: 0 0 2px 2px rgba(0, 123, 255, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .tarjetas-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
