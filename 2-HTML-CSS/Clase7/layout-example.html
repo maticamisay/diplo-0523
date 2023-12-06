@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page-layout">
+      <div class="header">
+        <h1>Encabezado</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          voluptatum.
+        </p>
+      </div>
+      <div class="main-content">Contenido Principal</div>
+      <div class="sidebar">
+        <ul>
+          <li>Enlace 1</li>
+          <li>Enlace 2</li>
+          <li>Enlace 3</li>
+          <li>Enlace 4</li>
+          <li>Enlace 5</li>
+        </ul>
+      </div>
+      <div class="footer">Pie de Página</div>
+    </div>
+  </body>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .page-layout {
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "header header"
+        "main-content sidebar"
+        "parte-inferior parte-inferior";
+      gap: 10px;
+      height: 100vh;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .main-content {
+      grid-area: main-content;
+      padding: 10px;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #efefef;
+      padding: 10px;
+    }
+
+    .footer {
+      grid-area: parte-inferior;
+      background-color: #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</html>

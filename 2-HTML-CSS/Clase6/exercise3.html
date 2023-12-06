@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Encuesta Avanzado</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="encuesta-container">
+      <form class="formulario-encuesta">
+        <!-- Sección de Información Personal -->
+        <section>
+          <h2>Información Personal</h2>
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Email" required />
+          <input type="date" />
+        </section>
+
+        <!-- Sección de Selección Múltiple -->
+        <section>
+          <h2>Preferencias</h2>
+          <label
+            ><input type="radio" name="opcion" value="opcion1" /> Opción
+            1</label
+          >
+          <label
+            ><input type="radio" name="opcion" value="opcion2" /> Opción
+            2</label
+          >
+          <!-- Más opciones de selección... -->
+        </section>
+
+        <!-- Sección de Casillas de Verificación -->
+        <section>
+          <h2>Intereses</h2>
+          <label><input type="checkbox" name="interes1" /> Interés 1</label>
+          <label><input type="checkbox" name="interes2" /> Interés 2</label>
+          <!-- Más casillas de verificación... -->
+        </section>
+
+        <!-- Sección de Selección Desplegable -->
+        <section>
+          <h2>Categoría</h2>
+          <select>
+            <option value="">Selecciona una categoría</option>
+            <option value="cat1">Categoría 1</option>
+            <option value="cat2">Categoría 2</option>
+            <!-- Más opciones... -->
+          </select>
+        </section>
+
+        <!-- Sección de Comentarios -->
+        <section>
+          <h2>Comentarios</h2>
+          <textarea placeholder="Tus comentarios"></textarea>
+        </section>
+
+        <button type="submit">Enviar Encuesta</button>
+      </form>
+    </div>
+  </body>
+</html>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .encuesta-container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .formulario-encuesta section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .formulario-encuesta h2 {
+    margin-top: 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .formulario-encuesta {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .formulario-encuesta input[type="date"] {
+      /* Asegurarse de que el input de fecha no sea más ancho que su contenedor */
+      max-width: 100%;
+    }
+
+    .formulario-encuesta button {
+      /* Hacer que el botón ocupe el ancho completo en dispositivos móviles */
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+</style>
