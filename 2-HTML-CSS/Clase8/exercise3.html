@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-1">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, maxime.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, voluptates, quia quae voluptate quos
+          consequuntur voluptatibus quod quas doloribus. Quisquam voluptatum,
+          quibusdam, voluptates, quia quae voluptate quos consequuntur
+          voluptatibus quod quas doloribus.
+        </p>
+      </div>
+      <div class="box-2">B</div>
+      <div class="box-3">C</div>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 36px;
+    }
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-template-areas:
+        "a a a a  a a a a  a a a a"
+        "b b b b  b b b b  c c c c"
+        "b b b b  b b b b  c c c c";
+      gap: 10px;
+    }
+    .box-1,
+    .box-2,
+    .box-3 {
+      background-color: #c5c5c5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box-1 {
+      grid-area: a;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0.5rem;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        gap: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        background-color: #e3e3e3;
+        padding: 0.5rem;
+        border-radius: 5px;
+      }
+      a:hover {
+        background-color: #b4aaaa;
+      }
+    }
+
+    .box-2 {
+      grid-area: b;
+    }
+
+    .box-3 {
+      grid-area: c;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "a a a a  a a a a  a a a a"
+          "a a a a  a a a a  a a a a"
+          "b b b b  b b b b  b b b b"
+          "b b b b  b b b b  b b b b"
+          "b b b b  b b b b  b b b b"
+          "b b b b  b b b b  b b b b"
+          "c c c c  c c c c  c c c c";
+      }
+    }
+  </style>
+</html>
