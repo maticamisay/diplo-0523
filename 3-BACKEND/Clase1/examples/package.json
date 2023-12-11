@@ -1,0 +1,17 @@
+{
+  "name": "primer-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-node.js",
+  "scripts": {
+    "start:node": "node server-node.js",
+    "dev:node": "nodemon server-node.js",
+    "start:express": "node server-express.js",
+    "dev:express": "nodemon server-express.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
