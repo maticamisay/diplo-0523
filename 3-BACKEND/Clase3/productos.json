@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "nombre": "Cafetera premium",
+    "precio": "1000"
+  },
+  {
+    "id": "2",
+    "nombre": "Cafetera basica",
+    "precio": "500"
+  }
+]
