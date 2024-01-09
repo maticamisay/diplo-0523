@@ -1,0 +1,16 @@
+{
+  "name": "clase7---repaso-middleware",
+  "version": "1.0.0",
+  "description": "En este ejercicio, practicaremos la creación y el uso de middlewares en una aplicación web básica utilizando Express.js. El objetivo es crear una aplicación que permita a los usuarios registrarse proporcionando un nombre de usuario y una contraseña, y utilizar middlewares para validar los datos de entrada antes de procesar la solicitud.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
