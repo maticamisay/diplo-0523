@@ -1,0 +1,15 @@
+{
+  "name": "clase10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uuidv4": "^6.2.13"
+  }
+}
