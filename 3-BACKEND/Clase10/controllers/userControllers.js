@@ -11,7 +11,7 @@ const getUserById = (req, res) => {
   const user = findByID(idUsuario);
   res.json({ data: user });
 };
-
+ 
 const createUser = (req, res) => {
   const { usuario, password } = req.body;
   const newUser = {
