@@ -1,0 +1,14 @@
+main {
+  background-color: beige;
+}
+
+.red {
+  background-color: red;
+}
+
+#navbar {
+  background-color: brown;
+  font-size: 26px;
+  color: white;
+  text-transform: uppercase;
+}
