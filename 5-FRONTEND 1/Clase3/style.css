@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+/*
+    <form id="productForm">
+      <input type="text" id="nombre" name="nombre" placeholder="producto ..." />
+      <input type="text" id="precio" name="precio" placeholder="5900 ..." />
+      <button type="submit">Cargar</button>
+    </form>
+*/
+
+#productForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#productForm input {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#productForm button {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*
+<section id="productsContainer">
+  <article>
+    <!-- nombre -->
+    <h3>Nombre producto</h3>
+    <!-- precio -->
+    <p>$ <span>9000</span></p>
+  </article>
+</section>
+*/
+
+#productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+#productsContainer article {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#productsContainer article h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#productsContainer article p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+#productsContainer article p span {
+  font-weight: bold;
+}
