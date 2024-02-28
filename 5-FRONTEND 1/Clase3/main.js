@@ -12,10 +12,12 @@ formNode.addEventListener("submit", function (event) {
 function printProduct(product) {
   const containerProduct = document.createElement("article");
   const nameProduct = document.createElement("h3");
+  const priceProduct = document.createElement("p");
   const deleteButton = document.createElement("button");
   const editButton = document.createElement("button");
 
   nameProduct.innerHTML = product.nombre;
+  priceProduct.innerHTML = product.precio;
   deleteButton.innerHTML = "Eliminar";
   editButton.innerHTML = "Editar";
 
@@ -30,6 +32,7 @@ function printProduct(product) {
   });
 
   containerProduct.appendChild(nameProduct);
+  containerProduct.appendChild(priceProduct);
   containerProduct.appendChild(deleteButton);
   containerProduct.appendChild(editButton);
   productsContainerNode.appendChild(containerProduct);

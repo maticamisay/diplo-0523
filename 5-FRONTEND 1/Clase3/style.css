@@ -43,6 +43,8 @@ body {
     <h3>Nombre producto</h3>
     <!-- precio -->
     <p>$ <span>9000</span></p>
+    <button>Eliminar</button>
+    <button>Editar</button>
   </article>
 </section>
 */
@@ -70,8 +72,19 @@ body {
 #productsContainer article p {
   margin: 0;
   font-size: 1.2em;
+  font-weight: bold;
 }
 
-#productsContainer article p span {
-  font-weight: bold;
+#productsContainer article button {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#productsContainer article button + button {
+  margin-left: 10px;
 }
