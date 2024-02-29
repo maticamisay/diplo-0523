@@ -1,13 +1,38 @@
 const formNode = document.querySelector("#productForm");
 const productsContainerNode = document.querySelector("#productsContainer");
 
-formNode.addEventListener("submit", function (event) {
+function submitForm(event) {
   event.preventDefault();
   const formData = new FormData(formNode);
   const data = Object.fromEntries(formData);
+
+  const result = validateForm(data);
+  if (!result) return;
+
   printProduct(data);
   formNode.reset();
-});
+}
+
+function validateForm(data) {
+  const precio = Number(data.precio);
+  if (!data.precio || !data.nombre) {
+    alert("Todos los valores deben estar completos");
+    formNode.reset();
+    return false;
+  }
+  if (data.nombre.length < 5) {
+    alert("El nombre debe tener mínimo 5 caracteres");
+    formNode.reset();
+    return false;
+  }
+  if (Number.isNaN(precio) || Number(data.precio) < 0) {
+    alert("El precio debe ser mayor o igual a 0");
+    formNode.reset();
+    return false;
+  }
+
+  return true;
+}
 
 function printProduct(product) {
   const containerProduct = document.createElement("article");
@@ -37,3 +62,5 @@ function printProduct(product) {
   containerProduct.appendChild(editButton);
   productsContainerNode.appendChild(containerProduct);
 }
+
+formNode.addEventListener("submit", submitForm);
