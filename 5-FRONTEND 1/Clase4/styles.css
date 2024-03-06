@@ -1,0 +1,105 @@
+/*
+  <body>
+    <form>
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" />
+      </div>
+      <div>
+        <label for="clientType">Tipo de Cliente:</label>
+        <select id="clientType" name="clientType">
+          <option value="mayorista">Cliente Mayorista</option>
+          <option value="minorista">Cliente Minorista</option>
+        </select>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+      </body>
+    */
+
+/* agrega estilos modernos para el formulario, con hovers,etc */
+/* Estilos base para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; /* Ajuste para que no sea demasiado ancho en pantallas grandes */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo sutil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; /* Cambio para mejor estructura en móviles */
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 16px; /* Tamaño de fuente más legible */
+  color: #333; /* Color de texto más oscuro para mejor contraste */
+}
+
+input,
+select {
+  padding: 10px;
+  border: 2px solid #ccc; /* Borde más destacado */
+  border-radius: 8px; /* Bordes más redondeados */
+  font-size: 14px; /* Ajuste de tamaño de fuente para mejor legibilidad */
+  transition: border-color 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Mejora en los hovers */
+input:hover,
+select:hover,
+input:focus,
+select:focus {
+  /* Incluye focus para accesibilidad */
+  border-color: #007bff; /* Color más vibrante al pasar el mouse o enfocar */
+  outline: none; /* Remueve el outline predeterminado para evitar estilos dobles */
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff; /* Color primario más moderno */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; /* Transición suave para el background */
+  font-size: 16px; /* Tamaño de fuente más grande para el botón */
+  margin-top: 10px; /* Espacio antes del botón */
+}
+
+button:hover {
+  background-color: #0056b3; /* Oscurece el botón al pasar el mouse */
+}
+
+input:focus,
+select:focus,
+button:focus {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+.is-invalid {
+  border: 2px solid #dc3545;
+  background-color: #f8d7da;
+}
+
+.is-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Responsive Design: Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  form {
+    width: 90%; /* Hace el formulario más ancho en pantallas pequeñas */
+  }
+}
