@@ -1,6 +1,6 @@
 const getProducts = async () => {
-  const resposne = await fetch("https://fakestoreapi.com/products");
-  const data = await resposne.json();
+  const response = await fetch("https://fakestoreapi.com/products");
+  const data = await response.json();
   return data;
 };
 
@@ -32,7 +32,7 @@ const printProducts = async () => {
         <img src="${product.image}" alt="${product.title}" />
         <h2>${product.title}</h2>
         <h3>$ ${product.price}</h3>
-        <p>${product.id}</p>
+        <p>ID ${product.id}</p>
         `;
     const button = document.createElement("button");
     button.textContent = "Agregar al carrito";
