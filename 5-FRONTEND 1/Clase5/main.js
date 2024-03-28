@@ -19,6 +19,7 @@ const saveCartLocalStorage = (item) => {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
 };
 
 const printProducts = async () => {
@@ -44,4 +45,13 @@ const printProducts = async () => {
   });
 };
 
+const updateCartCount = () => {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let totalQuantity = cart.reduce((total, product) => {
+    return total + product.quantity;
+  }, 0);
+  document.querySelector("#cart_count").textContent = ` ${totalQuantity}`;
+};
+
 printProducts();
+updateCartCount();

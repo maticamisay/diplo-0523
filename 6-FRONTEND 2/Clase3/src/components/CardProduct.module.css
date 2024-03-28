@@ -1,0 +1,43 @@
+/*
+import React from "react";
+import Card from "./Card";
+
+const CardProduct = ({ title, children }) => {
+  return (
+    <Card color={"#F7ECE1"} borderColor={"#725AC1"}>
+      <h1>{title}</h1>
+      <p>{children}</p>
+      <button>Comprar</button>
+    </Card>
+  );
+};
+
+export default CardProduct;
+
+*/
+
+.title {
+  color: #725ac1;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #8d86c9;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: #725ac1;
+  color: #f7ece1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #8d86c9;
+}
