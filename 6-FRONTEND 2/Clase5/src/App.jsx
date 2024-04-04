@@ -15,7 +15,7 @@ const App = () => {
       <nav className="bg-gray-300">
         <ul className="flex flex-row justify-between py-4 px-2">
           <li
-            className={`bg-white shadow-sm px-2 py-1 rounded-md hover:bg-gray-100 border border-gray-300 ${
+            className={`bg-white text-gray-800 shadow-sm px-2 py-1 rounded-md hover:bg-gray-100 border border-gray-300 ${
               pageRoute === "home" &&
               "bg-indigo-700 text-white hover:bg-indigo-800"
             }`}
@@ -25,7 +25,7 @@ const App = () => {
             </a>
           </li>
           <li
-            className={`bg-white shadow-sm px-2 py-1 rounded-md hover:bg-gray-100 border border-gray-300 ${
+            className={`bg-white text-gray-800 shadow-sm px-2 py-1 rounded-md hover:bg-gray-100 border border-gray-300 ${
               pageRoute === "about" &&
               "bg-indigo-700 text-white hover:bg-indigo-800"
             }`}
@@ -35,7 +35,7 @@ const App = () => {
             </a>
           </li>
           <li
-            className={`bg-white shadow-sm px-2 py-1 rounded-md hover:bg-gray-100 border border-gray-300 ${
+            className={`bg-white text-gray-800 shadow-sm px-2 py-1 rounded-md hover:bg-gray-100 border border-gray-300 ${
               pageRoute === "products" &&
               "bg-indigo-700 text-white hover:bg-indigo-800"
             }`}
