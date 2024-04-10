@@ -30,12 +30,12 @@ const Logo = styled.div`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <Logo>My Website</Logo>
+      <Logo>MatiasZapas</Logo>
       <div>
         <NavLink href="#">Home</NavLink>
-        <NavLink href="#">About</NavLink>
-        <NavLink href="#">Services</NavLink>
-        <NavLink href="#">Contact</NavLink>
+        <NavLink href="#">Iniciar sesión</NavLink>
+        <NavLink href="#">Registrarse</NavLink>
+        <NavLink href="#">Carrito</NavLink>
       </div>
     </NavbarContainer>
   );
