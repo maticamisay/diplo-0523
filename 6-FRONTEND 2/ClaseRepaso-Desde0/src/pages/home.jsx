@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import useProducts from "../hooks/use-products";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
+  const { products, loading } = useProducts();
 
-  useEffect(() => {
-    const getProducts = async () => {
-      const response = await fetch("https://fakestoreapi.com/products");
-      const data = await response.json();
-      setProducts(data);
-    };
-
-    getProducts();
-  }, []);
-
+  if (loading) {
+    return <p>Cargando...</p>;
+  }
   return (
     <div>
       <h1>Home</h1>
