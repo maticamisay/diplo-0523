@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
@@ -9,7 +10,7 @@ const NavbarContainer = styled.nav`
   padding: 1rem 2rem;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
@@ -32,10 +33,10 @@ const Navbar = () => {
     <NavbarContainer>
       <Logo>MatiasZapas</Logo>
       <div>
-        <NavLink href="#">Home</NavLink>
-        <NavLink href="#">Iniciar sesión</NavLink>
-        <NavLink href="#">Registrarse</NavLink>
-        <NavLink href="#">Carrito</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/login">Iniciar sesión</NavLink>
+        <NavLink to="#">Registrarse</NavLink>
+        <NavLink to="#">Carrito</NavLink>
       </div>
     </NavbarContainer>
   );
