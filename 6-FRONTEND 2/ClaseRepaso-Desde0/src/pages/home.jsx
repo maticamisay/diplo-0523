@@ -4,13 +4,12 @@ import ContainerComponent from "../components/container";
 import ProductsContainer from "../components/products/container";
 import ProductCard from "../components/products/card";
 import Title from "../components/title";
+import Loading from "../components/loading";
 
 const Home = () => {
   const { products, loading } = useProducts();
 
-  if (loading) {
-    return <p>Cargando...</p>;
-  }
+  if (loading) return <Loading />;
   return (
     <ContainerComponent>
       <Title mainTitle="Bienvenidos" subtitle="El mejor ecommerce :D" />

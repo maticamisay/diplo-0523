@@ -11,7 +11,13 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const loginData = { email, password };
+
+    console.log(loginData);
+  };
 
   return (
     <ContainerComponent>
