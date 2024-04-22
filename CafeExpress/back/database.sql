@@ -4,7 +4,7 @@ USE ecommerce;
 
 CREATE TABLE categories (
     category_id INT AUTO_INCREMENT PRIMARY KEY,
-    product_name VARCHAR(255) NOT NULL
+    category_name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE products (
@@ -35,6 +35,7 @@ CREATE TABLE sales_orders (
     order_date DATETIME NOT NULL,
     total_order DECIMAL(10, 2) NOT NULL,
     user_id INT,
+    user_email VARCHAR(255) NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users (user_id)
 );
 
