@@ -6,12 +6,13 @@ const {
   updateCategory,
   deleteCategory,
 } = require("../controllers/categories.controllers");
+const { validateCategory } = require("../middlewares/category.middleware");
 const router = express.Router();
 
 router.get("/", getAllCategories);
 router.get("/:idCategoria", getCategoryById);
-router.post("/", createCategory);
-router.put("/:idCategoria", updateCategory);
+router.post("/", validateCategory, createCategory);
+router.put("/:idCategoria", validateCategory, updateCategory);
 router.delete("/:idCategoria", deleteCategory);
 
 module.exports = router;
